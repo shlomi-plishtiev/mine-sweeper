@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(244, 187, 147);
+    
+}
+.cell {
+    width: 70px; 
+     height: 70px;
+     text-align: center;
+     border: 1px solid rgb(0, 0, 0);
+     font-size: 20px;
+   }
+
+
