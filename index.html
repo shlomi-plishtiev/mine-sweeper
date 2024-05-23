@@ -9,12 +9,19 @@
 </head>
 
 <body onload="init()">
-
-    <table>
-        <tbody class="board" onclick="onCellClicked(this)">
+        <button data-size="4" data-mines="3" class="myButton" onclick="btnClick(this)">Beginner</button>
+        <button data-size="8" data-mines="14" class="myButton" onclick="btnClick(this)">Medium</button>
+        <button data-size="12" data-mines="32" class="myButton" onclick="btnClick(this)">Expert</button>
+        <br><span class="icon" onclick="restart()">😃</span>
+        
+        <table>
+            <tbody class="board" onclick="onCellClicked(this)">
+            </table>
         </tbody>
-    </table>
-  <div> name: shlomi plishtiev</div>
+        <span class="demotext livesText">lives:3</span>
+        <span class="lives demotext">💓💓💓</span>
+    
+    <div> name: shlomi plishtiev</div>
     <script src="js/index.js"></script>
 </body>
 
