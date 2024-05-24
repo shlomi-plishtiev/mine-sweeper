@@ -7,20 +7,24 @@
     <title>mine sweeper</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
-
+דדד
 <body onload="init()">
-        <button data-size="4" data-mines="3" class="myButton" onclick="btnClick(this)">Beginner</button>
-        <button data-size="8" data-mines="14" class="myButton" onclick="btnClick(this)">Medium</button>
-        <button data-size="12" data-mines="32" class="myButton" onclick="btnClick(this)">Expert</button>
-        <br><span class="icon" onclick="restart()">😃</span>
-        
-        <table>
-            <tbody class="board" onclick="onCellClicked(this)">
-            </table>
+
+    <h1 class="title">MINE SWEEPER</h1>
+
+    <button data-size="4" data-mines="3" class="myButton" onclick="btnClick(this)">Beginner</button>
+    <button data-size="8" data-mines="14" class="myButton" onclick="btnClick(this)">Medium</button>
+    <button data-size="12" data-mines="32" class="myButton" onclick="btnClick(this)">Expert</button>
+    <br><span class="icon" onclick="restart()">😃</span>
+    <div class="block"> COMPLETED IN: <span class="timer">0.0</span></div>
+    <table>
+        <tbody class="board" onclick="onCellClicked()">
         </tbody>
-        <span class="demotext livesText">lives:3</span>
-        <span class="lives demotext">💓💓💓</span>
-    
+    </table>
+    <span class="demotext livesText">lives:3</span>
+    <span class="lives demotext">💓💓💓</span>
+    <br>
+    <div class="hintsDiv"> <span onclick="hintClicked()">💡</span></div>
     <div> name: shlomi plishtiev</div>
     <script src="js/index.js"></script>
 </body>

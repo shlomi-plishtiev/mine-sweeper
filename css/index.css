@@ -1,38 +1,82 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-html,
 
-body{
-
+body {
     text-align: center;
-     margin-top: 1%; 
-    justify-content: center;
-    align-items: center; 
-    background: black;
+    margin-top: 1%;
+    background: #000000;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.block {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: #FFFFFF;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #9c998d 0px 0px 20px, #9c998d 0px 0px 30px, #9c998d 0px 0px 40px, #9c998d 0px 0px 50px, #9c998d 0px 0px 75px;
+    color: #FFFFFF;
+}
+
+.title {
+    margin-bottom: 1%;
+    color: var(--glow-color);
+    font-family: "Raleway", sans-serif;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 5px, #FFF 0px 0px 5px, #9c998d 0px 0px 5px, #9c998d 0px 0px 5px, #9c998d 0px 0px 5px, #9c998d 0px 0px 5px, #9c998d 0px 0px 5px;
+    
 }
 
 
 .cell {
     width: 50px;
     height: 50px;
-    text-align: center;
-    border: 1px solid ;
-     color: var(--glow-color);
+    margin-top: 1%;
+    color: rgb(0, 0, 0);
+    border: 1px solid;
     -webkit-box-shadow: inset 0px 1px 1px 1px #1F87FF, 2px 5px 6px 0px #0B325E, 5px 5px 5px 5px rgba(69, 190, 255, 0.01);
-    box-shadow: inset 0px 1px 1px 1px #1F87FF, 2px 5px 6px 0px #0B325E, 5px 5px 5px 5px rgba(69, 190, 255, 0.01);
+    box-shadow: inset 0px 1px 1px 1px #1F87FF, 2px 5px 6px 0px #98b0cc, 5px 5px 5px 5px rgba(69, 190, 255, 0.01);
     font-size: 20px;
 }
 
- .demotext{
-    color: var(--glow-color);
-} 
+.demotext {
+    font-size: large;
+    color: #FFFFFF;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #9c998d 0px 0px 20px, #9c998d 0px 0px 30px, #9c998d 0px 0px 40px, #9c998d 0px 0px 50px, #9c998d 0px 0px 75px;
+    color: #FFFFFF;
+}
+
+.hintsDiv {
+    margin-top: 1%;
+    font-size: large;
+    color: #FFFFFF;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #9c998d 0px 0px 20px, #9c998d 0px 0px 30px, #9c998d 0px 0px 40px, #9c998d 0px 0px 50px, #9c998d 0px 0px 75px;
+    color: #FFFFFF;
+}
+
+.close {
+    width: 50px;
+    height: 50px;
+    border: 5px solid;
+    border-color: #ffffff #5e5e5e #bdbdbd #a6b5b9;
+    box-sizing: border-box;
+    background-color: rgb(142, 188, 209);
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 0.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 0.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 0.5em 0px var(--glow-color);
+}
+
+
+.shown {
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+    background-color: rgb(170, 228, 255);
+    box-sizing: border-box;
+    border-color: #82e0fd;
+}
+
 table {
-     margin-top: 1%;
-    color: aqua;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2%;
@@ -42,15 +86,16 @@ table {
     border: 0.25em solid var(--glow-color);
     border-radius: 0.45em;
     perspective: 2em;
-    font-family: "Raleway", sans-serif; 
+    font-family: "Raleway", sans-serif;
     -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-    0px 0px 0.5em 0px var(--glow-color);
--moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-    0px 0px 0.5em 0px var(--glow-color);
-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-    0px 0px 0.5em 0px var(--glow-color);
-animation: border-flicker 2s linear infinite;
+        0px 0px 0.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 0.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 0.5em 0px var(--glow-color);
+    animation: border-flicker 2s;
 }
+
 :root {
     --glow-color: hsl(186 100% 69%);
 }
@@ -73,8 +118,9 @@ animation: border-flicker 2s linear infinite;
         0px 0px 0.5em 0px var(--glow-color);
     box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
         0px 0px 0.5em 0px var(--glow-color);
-    animation: border-flicker 2s linear infinite;
+    animation: border-flicker 2s;
 }
+
 .glowing-txt {
     float: left;
     margin-right: -0.8em;
@@ -85,10 +131,12 @@ animation: border-flicker 2s linear infinite;
     text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
     animation: text-flicker 3s linear infinite;
 }
+
 .faulty-letter {
     opacity: 0.5;
     animation: faulty-flicker 2s linear infinite;
 }
+
 .myButton::before {
     content: "";
     position: absolute;
@@ -102,6 +150,7 @@ animation: border-flicker 2s linear infinite;
     background: var(--glow-color);
     pointer-events: none;
 }
+
 .myButton::after {
     content: "";
     position: absolute;
@@ -115,26 +164,32 @@ animation: border-flicker 2s linear infinite;
     box-shadow: 0 0 2em 0.2em var(--glow-color);
     transition: opacity 100ms linear;
 }
+
 .myButton:hover {
     color: rgba(0, 0, 0, 0.8);
     text-shadow: none;
     animation: none;
 }
+
 .myButton:hover .glowing-txt {
     animation: none;
 }
+
 .myButton:hover .faulty-letter {
     animation: none;
     text-shadow: none;
     opacity: 1;
 }
+
 .myButton:hover:before {
     filter: blur(1.5em);
     opacity: 1;
 }
+
 .myButton:hover:after {
     opacity: 1;
 }
+
 @keyframes faulty-flicker {
     0% {
         opacity: 0.1;
@@ -172,6 +227,7 @@ animation: border-flicker 2s linear infinite;
         opacity: 1;
     }
 }
+
 @keyframes text-flicker {
     0% {
         opacity: 0.1;
@@ -221,6 +277,7 @@ animation: border-flicker 2s linear infinite;
         opacity: 0.9;
     }
 }
+
 @keyframes border-flicker {
     0% {
         opacity: 0.1;
@@ -246,12 +303,15 @@ animation: border-flicker 2s linear infinite;
         opacity: 1;
     }
 }
+
 @media only screen and (max-width: 100px) {
     .myButton {
         font-size: 1em;
     }
 }
+
 .icon {
+
     position: relative;
     color: var(--glow-color);
     cursor: pointer;
@@ -268,8 +328,9 @@ animation: border-flicker 2s linear infinite;
         0px 0px 0.5em 0px var(--glow-color);
     box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
         0px 0px 0.5em 0px var(--glow-color);
-    animation: border-flicker 2s linear infinite;
+    animation: border-flicker 2s;
 }
+
 .icon::before {
     content: "";
     position: absolute;
@@ -283,6 +344,7 @@ animation: border-flicker 2s linear infinite;
     background: var(--glow-color);
     pointer-events: none;
 }
+
 .icon::after {
     content: "";
     position: absolute;
@@ -296,28 +358,64 @@ animation: border-flicker 2s linear infinite;
     box-shadow: 0 0 2em 0.2em var(--glow-color);
     transition: opacity 100ms linear;
 }
+
 .icon:hover {
     color: rgba(0, 0, 0, 0.8);
     text-shadow: none;
     animation: none;
 }
+
 .icon:hover .glowing-txt {
     animation: none;
 }
+
 .icon:hover .faulty-letter {
     animation: none;
     text-shadow: none;
     opacity: 1;
 }
+
 .icon:hover:before {
     filter: blur(1.5em);
     opacity: 1;
 }
+
 .icon:hover:after {
     opacity: 1;
 }
+
 @media only screen and (max-width: 100px) {
     .icon {
         font-size: 1em;
     }
 } 
+
+.icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    filter: blur(1em);
+    transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    background: var(--glow-color);
+    pointer-events: none;
+}
+
+.icon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: var(--glow-color);
+    box-shadow: 0 0 2em 0.2em var(--glow-color);
+    transition: opacity 100ms linear;
+}
+
+
